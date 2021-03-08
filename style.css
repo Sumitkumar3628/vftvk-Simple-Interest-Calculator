@@ -1,4 +1,64 @@
-body {background-color:tan;}
-h1{color:green;}
+*{
+    box-sizing: border-box;
+    margin-left: 0%;
+    margin-top: 0%;
+    font-family: 'Archivo Black', sans-serif;
+}
+h1{    
+    color:rgb(151, 145, 145);
+    word-spacing: 2px;
+    letter-spacing: 2px;
+}
+.maindiv{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-top: 50px;
+}
+
+label{
+    width: 240px;
+    display: inline-block;
+} 
+div .ratediv{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.btn{
+    margin-right: 150px;
+    background-color: rgb(221, 216, 216);
+    border-radius: 3px;
+    padding: 4px 6px 4px 6px;
+    cursor: pointer;
+    border: 1px;
+    border-color:black;
+    border-width: 2px;
+    border: 1px,solid,black;
+    border-style: solid;
+}
+ div p{
+    /* margin-left: 500px;
+    text-decoration: none;
+    text-align: left;
+    margin-left: 480px; */
+    padding-left: 15px;
+} 
+select{
+    margin-right: 148px;
+}
+
+.foot{
+    margin-left: 430px;
+}
+mark {
+    background-color: yellow;
+    color: black;
+  }
+.respara{
+    text-align:start;
+    margin-left: 506px;
+}
 
 

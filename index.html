@@ -1,16 +1,55 @@
+<!DOCTYPE html>
 <html>
     <head>
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
+        <title>Web-App Simple Interest Calculator</title>
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+        <script>
+            function updateTextInput(val){
+            document.getElementById("rateIs").innerHTML = val;
+            }
+        </script>
     </head>
     <body>
-        <h1>Simple Interest Calculator</h1>
+        <div class="maindiv">
+            <header>
+                <h1><b>Simple Interest Calculator</b></h1>
+            </header>
 
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
+            <div class="bodydiv">
+                <label for="principal">Amount</label>
+                <input type="number"  id="principal"><br/><br/>
 
-        <button onclick="compute()">Compute</button>
+                <div class="ratediv">
+                    <label for="rate" class="lblFloat">Interest Rate</label>
+                    <input type="range" id="rate" name="points" min="1" max="20" step="0.25" value="10.25" onchange="updateTextInput(this.value)"><p id="rateIs" class="lblFloat">                   
+                    </p><br/><br/>
+                </div>
+
+                <label for="years">No. of Years</label>
+                <select name="years" id="years">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>              
+                <br/><br/>
+                <button class="btn" onclick="compute()">Compute Interest</button><br/><br/>
+                <p class="respara" id="result">
+                </p>
+                
+            </div><br/>
+
+        </div>       
+        <footer class="foot"><h3>&#169 Everyone Can Get Rich</h3></footer>
     </body>
 </html>
+
